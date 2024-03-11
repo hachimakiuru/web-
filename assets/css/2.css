@@ -1,0 +1,392 @@
+@charset "utf-8";
+/*========= LoadingのためのCSS ===============*/
+
+/* Loading背景画面設定　*/
+
+#splash {
+    /*fixedで全面に固定*/
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background:#333;
+  text-align:center;
+  color: #fffaf0;
+}
+
+/* Loadingバー中央配置　*/
+#splash_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+    z-index: 999;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+/*IE11対策用バーの線の高さ※対応しなければ削除してください*/
+#splash_text svg{
+    height: 2px;
+}
+
+/* loading終 */
+
+/* 大外枠 */
+html {
+    scroll-behavior: smooth;
+  }
+  
+  
+  body{
+      background-color: #fffaf0;
+      height: 120vh;
+      margin: 0%;
+    }
+
+    @media screen and (max-width: 480px){
+      
+    }
+/* 大外枠 */
+
+/* <header> */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000; 
+  }
+  
+  
+  .header_title{
+    text-decoration: none;
+    /* color: black; */
+  }
+  
+  .header-left {
+    font-size: 20px;
+    margin: 14px 40px;
+  }
+  
+  .header-left  .header-right{
+    margin: 14px 40px;
+  }
+  .nav {
+    display: flex;
+  }
+  
+  .list_header{
+    list-style: none;
+  }
+  
+  .nav > li > a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  @media screen and (max-width: 480px){
+    .header-right{
+      display: none;
+    }
+  }
+/* </header> */
+
+/* section1 */
+.section1{
+  height: 100vh;
+}
+
+.image_container1{
+  position: relative;
+  height: 100vh;
+  background-image: url(../img/pic_sub_back1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            opacity: 0.3;
+}
+.content1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* 親要素の幅いっぱいに広げる */
+  height: 100%; /* 親要素の高さいっぱいに広げる */
+  display: block;
+  align-items: center;
+  justify-content: center;
+  color: black; /* 文字の色を設定 */
+}
+
+  
+.no1_text{
+  list-style: none;
+  text-align: center;
+  line-height: 3; /* 行間（行の高さ）を調整 */
+}
+
+.image_no1 {
+  display: block; /* ブロック要素として表示 */
+  margin:  auto; /* 左右のマージンを自動で調整して中央に配置 */
+  max-width: 100%; /* 幅を親要素に合わせる */
+  height: auto; /* アスペクト比を維持して高さを自動調整 */
+  /* その他のスタイルを追加 */
+}
+
+.for_media{
+  display: none;
+}
+
+@media screen and (max-width: 480px){
+  .test1 {
+   display: none;
+}
+
+.for_media{
+  display: block;
+}
+.section1{
+  height: 100vh;
+}
+
+.image_container1{
+  position: relative;
+  height: 100vh;
+  background-image: url(../img/pic_sub_back1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            opacity: 0.3;
+}
+.content1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* 親要素の幅いっぱいに広げる */
+  height: 100%; /* 親要素の高さいっぱいに広げる */
+  display: block;
+  align-items: center;
+  justify-content: center;
+  color: black; /* 文字の色を設定 */
+}
+}
+
+/* section1 */
+
+/* section2 */
+.section2{
+  height: 100vh;
+  justify-content:space-around ;
+  align-items: center;
+}
+.no2_text{
+  list-style: none;
+  text-align: center;
+  line-height: 3; /* 行間（行の高さ）を調整 */
+}
+
+.image_no2{
+  display: block; /* ブロック要素として表示 */
+  margin: 0 auto; /* 左右のマージンを自動で調整して中央に配置 */
+  max-width: 100%; /* 幅を親要素に合わせる */
+  height: auto; /* アスペクト比を維持して高さを自動調整 */
+  /* その他のスタイルを追加 */
+}
+
+.image_container2{
+  position: relative;
+  height: 110vh;
+  background-image: url(../img/pic_sub_back2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            opacity: 0.3;
+}
+
+.content2{
+  position: absolute;
+  top: 655px;
+  left: 0;
+  width: 100%; /* 親要素の幅いっぱいに広げる */
+  height: 100%; /* 親要素の高さいっぱいに広げる */
+  display: block;
+  align-items: center;
+  justify-content: center;
+  color: black; /* 文字の色を設定 */
+}
+
+.test4{
+  display: none;
+}
+
+@media screen and (max-width: 480px){
+  .test2{
+    display: none;
+  }
+
+  .test4{
+    display: block;
+
+  }
+
+  .section2{
+    height: 100vh;
+    justify-content:space-around ;
+    align-items: center;
+  }
+  .no2_text{
+    list-style: none;
+    text-align: center;
+    line-height: 2; /* 行間（行の高さ）を調整 */
+  }
+  
+  .image_no2{
+    display: block; /* ブロック要素として表示 */
+    margin: 0 auto; /* 左右のマージンを自動で調整して中央に配置 */
+    max-width: 100%; /* 幅を親要素に合わせる */
+    height: auto; /* アスペクト比を維持して高さを自動調整 */
+    /* その他のスタイルを追加 */
+  }
+  
+  .image_container2{
+    position: relative;
+    height: 100vh;
+    background-image: url(../img/pic_sub_back2.jpg);
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center center;
+              opacity: 0.3;
+  }
+  
+  .content2{
+    position: absolute;
+    top: 940px;
+    left: 0;
+    width: 100%; /* 親要素の幅いっぱいに広げる */
+    height: 100%; /* 親要素の高さいっぱいに広げる */
+    display: block;
+    align-items: center;
+    justify-content: center;
+    color: black; /* 文字の色を設定 */
+  }
+}
+
+/* section2 */
+
+/* section3 */
+.section3{
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.no3_text{
+  list-style: none;
+  text-align: center;
+  line-height: 3; /* 行間（行の高さ）を調整 */
+}
+
+.image_no3{
+  display: block; /* ブロック要素として表示 */
+  margin: 0 auto; /* 左右のマージンを自動で調整して中央に配置 */
+  max-width: 100%; /* 幅を親要素に合わせる */
+  height: auto; /* アスペクト比を維持して高さを自動調整 */
+  /* その他のスタイルを追加 */
+}
+
+.image_container3{
+  position: relative;
+  height: 130vh;
+  background-image: url(../img/pic_sub_back3.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            opacity: 0.3;
+}
+
+.content3{
+  position: absolute;
+  top: 1370px;
+  left: 0;
+  width: 100%; /* 親要素の幅いっぱいに広げる */
+  height: 100%; /* 親要素の高さいっぱいに広げる */
+  display: block;
+  align-items: center;
+  justify-content: center;
+  color: black; /* 文字の色を設定 */
+}
+
+.test5{
+  display: none;
+}
+
+@media screen and (max-width: 480px){
+  .content3{
+    top: 1900px;
+  }
+
+  .test3{
+    display: none;
+  }
+
+  .test5{
+    display: block;
+  }
+
+  .image_container3{
+    height: 120vh;
+  }
+
+  .test3{
+      font-size: 14px; /* 適切なサイズに調整してください */
+      line-height: 1.8; /* 適切な行間に調整してください */
+      margin-bottom: 10px; /* 適切なマージンを設定してください */
+  }
+  
+}
+
+/* section3 */
+
+/* footer */
+  .footer{
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    font-size: 17px;
+    /* margin-top: 40px;
+    bottom: 0%; */
+  }
+/* footer */
+
+/* image */
+.image_no1{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); 
+  margin-bottom: 50px;
+  margin-top: 60px;
+}
+
+.image_no2{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); 
+  margin-bottom: 50px;
+  margin-top: 60px;
+}
+
+.image_no3{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); 
+  margin-bottom: 50px;
+  margin-top: 60px;
+}
+/* image */
+
+/* overall */
+#letter{
+  font-size: 30px;
+}
+/* overall */
+
